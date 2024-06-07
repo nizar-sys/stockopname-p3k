@@ -1,0 +1,150 @@
+Array
+(
+    [month] => January
+    [year] => 2024
+    [room] => Ruangan Keuangan
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [item_id] => 1
+                    [actual_quantity] => 10
+                    [missing_quantity] => 10
+                )
+
+            [1] => Array
+                (
+                    [item_id] => 2
+                    [actual_quantity] => 0
+                    [missing_quantity] => 0
+                )
+
+            [2] => Array
+                (
+                    [item_id] => 3
+                    [actual_quantity] => 0
+                    [missing_quantity] => 0
+                )
+
+            [3] => Array
+                (
+                    [item_id] => 4
+                    [actual_quantity] => 0
+                    [missing_quantity] => 0
+                )
+
+            [4] => Array
+                (
+                    [item_id] => 5
+                    [actual_quantity] => 0
+                    [missing_quantity] => 0
+                )
+
+            [5] => Array
+                (
+                    [item_id] => 6
+                    [actual_quantity] => 0
+                    [missing_quantity] => 0
+                )
+
+            [6] => Array
+                (
+                    [item_id] => 7
+                    [actual_quantity] => 0
+                    [missing_quantity] => 0
+                )
+
+            [7] => Array
+                (
+                    [item_id] => 8
+                    [actual_quantity] => 0
+                    [missing_quantity] => 0
+                )
+
+            [8] => Array
+                (
+                    [item_id] => 9
+                    [actual_quantity] => 0
+                    [missing_quantity] => 0
+                )
+
+            [9] => Array
+                (
+                    [item_id] => 10
+                    [actual_quantity] => 0
+                    [missing_quantity] => 0
+                )
+
+            [10] => Array
+                (
+                    [item_id] => 11
+                    [actual_quantity] => 0
+                    [missing_quantity] => 0
+                )
+
+            [11] => Array
+                (
+                    [item_id] => 12
+                    [actual_quantity] => 0
+                    [missing_quantity] => 0
+                )
+
+            [12] => Array
+                (
+                    [item_id] => 13
+                    [actual_quantity] => 0
+                    [missing_quantity] => 0
+                )
+
+            [13] => Array
+                (
+                    [item_id] => 14
+                    [actual_quantity] => 0
+                    [missing_quantity] => 0
+                )
+
+            [14] => Array
+                (
+                    [item_id] => 15
+                    [actual_quantity] => 0
+                    [missing_quantity] => 0
+                )
+
+            [15] => Array
+                (
+                    [item_id] => 16
+                    [actual_quantity] => 0
+                    [missing_quantity] => 0
+                )
+
+            [16] => Array
+                (
+                    [item_id] => 17
+                    [actual_quantity] => 0
+                    [missing_quantity] => 0
+                )
+
+            [17] => Array
+                (
+                    [item_id] => 18
+                    [actual_quantity] => 0
+                    [missing_quantity] => 0
+                )
+
+            [18] => Array
+                (
+                    [item_id] => 19
+                    [actual_quantity] => 0
+                    [missing_quantity] => 0
+                )
+
+            [19] => Array
+                (
+                    [item_id] => 20
+                    [actual_quantity] => 0
+                    [missing_quantity] => 0
+                )
+
+        )
+
+)
