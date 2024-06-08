@@ -11,6 +11,7 @@ require './vendor/autoload.php';
 function send_reset_email($email, $token, $user_id)
 {
     $mail = new PHPMailer(true);
+    $appUrl = APP_URL;
 
     try {
         // Konfigurasi server SMTP
@@ -33,8 +34,8 @@ function send_reset_email($email, $token, $user_id)
         // Gunakan htmlspecialchars untuk menghindari XSS
         $encoded_token = urlencode($token);
 
-        $mail->Body = "Klik <a href='http://web_test.test/reset-password.php?token=$encoded_token&user_id=$user_id'>tautan ini</a> untuk mereset password Anda.";
-        $mail->AltBody = "Klik tautan ini untuk mereset password Anda: http://web_test.test/reset-password.php?token=$encoded_token&user_id=$user_id";
+        $mail->Body = "Klik <a href='$appUrl/reset-password.php?token=$encoded_token&user_id=$user_id'>tautan ini</a> untuk mereset password Anda.";
+        $mail->AltBody = "Klik tautan ini untuk mereset password Anda: $appUrl/reset-password.php?token=$encoded_token&user_id=$user_id";
 
         $mail->send();
     } catch (Exception $e) {

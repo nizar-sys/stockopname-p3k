@@ -12,6 +12,7 @@ require './vendor/autoload.php';
 function send_verification_email($email, $username)
 {
     $mail = new PHPMailer(true);
+    $appUrl = APP_URL;
 
     try {
         // Konfigurasi server SMTP
@@ -30,8 +31,8 @@ function send_verification_email($email, $username)
         // Konten email
         $mail->isHTML(true);
         $mail->Subject = 'Verifikasi Akun Anda';
-        $mail->Body    = "Halo $username,<br><br>Silakan klik tautan berikut untuk memverifikasi akun Anda:<br><a href='https://web_test.test/verify.php?email=" . urlencode($email) . "'>Verifikasi Akun</a><br><br>Terima kasih!";
-        $mail->AltBody = "Halo $username,\n\nSilakan klik tautan berikut untuk memverifikasi akun Anda:\nhttps://web_test.test/verify.php?email=" . urlencode($email) . "\n\nTerima kasih!";
+        $mail->Body    = "Halo $username,<br><br>Silakan klik tautan berikut untuk memverifikasi akun Anda:<br><a href='$appUrl/verify.php?email=" . urlencode($email) . "'>Verifikasi Akun</a><br><br>Terima kasih!";
+        $mail->AltBody = "Halo $username,\n\nSilakan klik tautan berikut untuk memverifikasi akun Anda:\n$appUrl/verify.php?email=" . urlencode($email) . "\n\nTerima kasih!";
 
         $mail->send();
     } catch (Exception $e) {
